@@ -85,7 +85,10 @@ const flujoDatosPedido = addKeyword(["Si",'si'], { sensitive: true })
 
     })
 
-const noCita = addKeyword('Lamentamos que no quieras agendar una cita.\n ¡Si cambias de opinión puedes escribirnos cuando necesites! 🤗',{})
+const noCita = addKeyword(['No','no'],{})
+    .addAnswer('Lamentamos que no quieras agendar una cita.\n ¡Si cambias de opinión puedes escribirnos cuando necesites! 🤗')
+
+
 
 const informacion  = addKeyword(["Si",'si'], { sensitive: true })
 
