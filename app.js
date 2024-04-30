@@ -61,7 +61,7 @@ const flujoDatosPedido = addKeyword(["Si",'si'], { sensitive: true })
         }
     )
     .addAnswer(
-        "Escribe fecha y hora de los horarios que agendar",
+        "Escribe fecha y hora de la cita que deseas agendar",
         { capture: true },
         async (ctx, { state }) => {
             await state.update({ fecha: ctx.body });
